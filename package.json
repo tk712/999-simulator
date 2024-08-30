@@ -1,0 +1,12 @@
+{
+  "name": "999-simulator",
+  "version": "1.0.0",
+  "description": "A 999 simulator backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
