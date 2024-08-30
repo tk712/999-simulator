@@ -9,3 +9,8 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.get('/simulate-call', (req, res) => {
+  const locations = ["Walsall", "Sutton Coldfield", "Four Oaks", "Kingstanding"];
+  const randomLocation = locations[Math.floor(Math.random() * locations.length)];
+  res.json({ message: `Emergency at ${randomLocation}` });
+});
